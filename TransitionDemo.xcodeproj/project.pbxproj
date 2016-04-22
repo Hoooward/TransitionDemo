@@ -13,6 +13,7 @@
 		893B57AF1CC9FFAA00E7FFED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893B57AD1CC9FFAA00E7FFED /* LaunchScreen.storyboard */; };
 		893B57B71CCA02C600E7FFED /* RootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B57B61CCA02C600E7FFED /* RootTableViewController.swift */; };
 		893B57B91CCA03AE00E7FFED /* SegueHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B57B81CCA03AE00E7FFED /* SegueHelper.swift */; };
+		89B1D2381CCA137C00511C25 /* NavigationTransition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B1D2361CCA137C00511C25 /* NavigationTransition.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		893B57B01CC9FFAA00E7FFED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		893B57B61CCA02C600E7FFED /* RootTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootTableViewController.swift; path = ../RootTableViewController.swift; sourceTree = "<group>"; };
 		893B57B81CCA03AE00E7FFED /* SegueHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueHelper.swift; sourceTree = "<group>"; };
+		89B1D2371CCA137C00511C25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NavigationTransition.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				893B57B81CCA03AE00E7FFED /* SegueHelper.swift */,
 				893B57A41CC9FFAA00E7FFED /* AppDelegate.swift */,
 				893B57A81CC9FFAA00E7FFED /* Main.storyboard */,
+				89B1D2361CCA137C00511C25 /* NavigationTransition.storyboard */,
 				893B57AB1CC9FFAA00E7FFED /* Assets.xcassets */,
 				893B57AD1CC9FFAA00E7FFED /* LaunchScreen.storyboard */,
 				893B57B01CC9FFAA00E7FFED /* Info.plist */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				893B57AF1CC9FFAA00E7FFED /* LaunchScreen.storyboard in Resources */,
+				89B1D2381CCA137C00511C25 /* NavigationTransition.storyboard in Resources */,
 				893B57AC1CC9FFAA00E7FFED /* Assets.xcassets in Resources */,
 				893B57AA1CC9FFAA00E7FFED /* Main.storyboard in Resources */,
 			);
@@ -161,6 +165,14 @@
 				893B57AE1CC9FFAA00E7FFED /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		89B1D2361CCA137C00511C25 /* NavigationTransition.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89B1D2371CCA137C00511C25 /* Base */,
+			);
+			name = NavigationTransition.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -290,6 +302,7 @@
 				893B57B51CC9FFAA00E7FFED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
