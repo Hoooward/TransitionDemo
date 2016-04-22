@@ -14,6 +14,10 @@
 		893B57B71CCA02C600E7FFED /* RootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B57B61CCA02C600E7FFED /* RootTableViewController.swift */; };
 		893B57B91CCA03AE00E7FFED /* SegueHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B57B81CCA03AE00E7FFED /* SegueHelper.swift */; };
 		89B1D2381CCA137C00511C25 /* NavigationTransition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B1D2361CCA137C00511C25 /* NavigationTransition.storyboard */; };
+		89B1D23A1CCA15B300511C25 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1D2391CCA15B300511C25 /* FirstViewController.swift */; };
+		89B1D23C1CCA15D400511C25 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1D23B1CCA15D400511C25 /* SecondViewController.swift */; };
+		89B1D23F1CCA165600511C25 /* HWDTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1D23E1CCA165600511C25 /* HWDTransitionController.swift */; };
+		89B1D2411CCA442100511C25 /* HWDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1D2401CCA442100511C25 /* HWDNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		893B57B61CCA02C600E7FFED /* RootTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootTableViewController.swift; path = ../RootTableViewController.swift; sourceTree = "<group>"; };
 		893B57B81CCA03AE00E7FFED /* SegueHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueHelper.swift; sourceTree = "<group>"; };
 		89B1D2371CCA137C00511C25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NavigationTransition.storyboard; sourceTree = "<group>"; };
+		89B1D2391CCA15B300511C25 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		89B1D23B1CCA15D400511C25 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		89B1D23E1CCA165600511C25 /* HWDTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWDTransitionController.swift; sourceTree = "<group>"; };
+		89B1D2401CCA442100511C25 /* HWDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWDNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +69,25 @@
 				893B57B61CCA02C600E7FFED /* RootTableViewController.swift */,
 				893B57B81CCA03AE00E7FFED /* SegueHelper.swift */,
 				893B57A41CC9FFAA00E7FFED /* AppDelegate.swift */,
+				89B1D23E1CCA165600511C25 /* HWDTransitionController.swift */,
 				893B57A81CC9FFAA00E7FFED /* Main.storyboard */,
-				89B1D2361CCA137C00511C25 /* NavigationTransition.storyboard */,
+				89B1D2401CCA442100511C25 /* HWDNavigationController.swift */,
+				89B1D23D1CCA15DD00511C25 /* NavigationTransition */,
 				893B57AB1CC9FFAA00E7FFED /* Assets.xcassets */,
 				893B57AD1CC9FFAA00E7FFED /* LaunchScreen.storyboard */,
 				893B57B01CC9FFAA00E7FFED /* Info.plist */,
 			);
 			path = TransitionDemo;
+			sourceTree = "<group>";
+		};
+		89B1D23D1CCA15DD00511C25 /* NavigationTransition */ = {
+			isa = PBXGroup;
+			children = (
+				89B1D2361CCA137C00511C25 /* NavigationTransition.storyboard */,
+				89B1D2391CCA15B300511C25 /* FirstViewController.swift */,
+				89B1D23B1CCA15D400511C25 /* SecondViewController.swift */,
+			);
+			name = NavigationTransition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89B1D23F1CCA165600511C25 /* HWDTransitionController.swift in Sources */,
 				893B57B91CCA03AE00E7FFED /* SegueHelper.swift in Sources */,
 				893B57A51CC9FFAA00E7FFED /* AppDelegate.swift in Sources */,
 				893B57B71CCA02C600E7FFED /* RootTableViewController.swift in Sources */,
+				89B1D2411CCA442100511C25 /* HWDNavigationController.swift in Sources */,
+				89B1D23C1CCA15D400511C25 /* SecondViewController.swift in Sources */,
+				89B1D23A1CCA15B300511C25 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

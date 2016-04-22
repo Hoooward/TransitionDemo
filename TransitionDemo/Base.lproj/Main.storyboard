@@ -40,7 +40,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="zHP-9t-cK1" kind="presentation" identifier="ShowNavigationTransition" id="G2d-ry-svY"/>
+                                            <segue destination="zHP-9t-cK1" kind="show" identifier="ShowNavigationTransition" id="G2d-ry-svY"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -60,7 +60,7 @@
         <!--Navigation Controller-->
         <scene sceneID="rsy-2C-Igx">
             <objects>
-                <navigationController id="rUP-R6-VJf" sceneMemberID="viewController">
+                <navigationController id="rUP-R6-VJf" customClass="HWDNavigationController" customModule="TransitionDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Aie-tk-Tja">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

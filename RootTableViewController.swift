@@ -9,11 +9,13 @@
 import UIKit
 
 class RootTableViewController: UITableViewController {
+    var HWDNavigationDelegate = HWDNavigationControllerDelegate()
 
 }
 
 extension RootTableViewController: SegueHandlerType {
     
+
     
     enum SegueIdentifier: String {
         case NavigationTransition = "ShowNavigationTransition"
@@ -22,7 +24,11 @@ extension RootTableViewController: SegueHandlerType {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         switch segueIdentifierForSegue(segue) {
         case .NavigationTransition:
-            break
+            
+            let tableViewController = segue.sourceViewController as! UITableViewController
+            let navigation = tableViewController.navigationController as! HWDNavigationController
+            navigation.delegate = HWDNavigationDelegate
+
         }
     }
 }
