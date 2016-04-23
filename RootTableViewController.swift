@@ -11,6 +11,7 @@ import UIKit
 class RootTableViewController: UITableViewController {
     let HWDNavigationDelegate = HWDNavigationControllerDelegate()
     let ModalViewControllerDelegate = HWDModalTransitionDelegate()
+    let TabBarViewControllerDelegate = HWDTabBarControllerDelegate()
 
 }
 
@@ -21,6 +22,7 @@ extension RootTableViewController: SegueHandlerType {
     enum SegueIdentifier: String {
         case NavigationTransition = "ShowNavigationTransition"
         case ModalTransition = "ShowModalViewController"
+        case TarBarTransition = "ShowTabBarController"
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -46,6 +48,9 @@ extension RootTableViewController: SegueHandlerType {
             toVC.transitioningDelegate = ModalViewControllerDelegate
             toVC.modalPresentationStyle = .Custom
             
+        case .TarBarTransition:
+            let toVC = segue.destinationViewController as! TabbarController
+            toVC.delegate = TabBarViewControllerDelegate
 
         }
     }

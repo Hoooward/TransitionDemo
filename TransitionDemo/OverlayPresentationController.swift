@@ -35,6 +35,10 @@ class OverlayPresentationController: UIPresentationController {
             }, completion: nil)
     }
     
+    /*
+     用来响应屏幕翻转
+     进行自动布局。
+    */
     override func containerViewWillLayoutSubviews() {
         dimmingView.center = containerView!.center
         dimmingView.bounds = containerView!.bounds
@@ -45,4 +49,7 @@ class OverlayPresentationController: UIPresentationController {
         presentedView()?.bounds = CGRect(x: 0, y: 0, width: width, height: height)
     }
 
+//    override func shouldRemovePresentersView() -> Bool {
+//        return true
+//    }
 }
