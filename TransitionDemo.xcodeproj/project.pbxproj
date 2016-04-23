@@ -85,12 +85,12 @@
 				893B57B61CCA02C600E7FFED /* RootTableViewController.swift */,
 				897BD2F11CCB7DAC00E9A001 /* ModalTransition */,
 				893B57A81CC9FFAA00E7FFED /* Main.storyboard */,
-				897BD2F51CCBABAC00E9A001 /* TabbarTransition.storyboard */,
 				89B1D23D1CCA15DD00511C25 /* NavigationTransition */,
 				893B57AB1CC9FFAA00E7FFED /* Assets.xcassets */,
 				893B57AD1CC9FFAA00E7FFED /* LaunchScreen.storyboard */,
 				893B57B01CC9FFAA00E7FFED /* Info.plist */,
 				897BD2F71CCBAD0400E9A001 /* TabbarController.swift */,
+				897BD2F51CCBABAC00E9A001 /* TabbarTransition.storyboard */,
 				897BD2F91CCBAD3100E9A001 /* HWDTabBarControllerDelegate.swift */,
 			);
 			path = TransitionDemo;

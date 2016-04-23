@@ -10,6 +10,9 @@ import UIKit
 
 class HWDTabBarControllerDelegate: NSObject, UITabBarControllerDelegate {
     
+    var interaction = false
+    let interactionController = UIPercentDrivenInteractiveTransition()
+    
     func tabBarController(tabBarController: UITabBarController, animationControllerForTransitionFromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
         let fromIndex = tabBarController.viewControllers?.indexOf(fromVC)!
@@ -19,5 +22,9 @@ class HWDTabBarControllerDelegate: NSObject, UITabBarControllerDelegate {
         let transitionType = HWDTransitionType.TabTransition(tabChangeDirection)
         
         return SlideAnimationController(type: transitionType)
+    }
+    
+    func tabBarController(tabBarController: UITabBarController, interactionControllerForAnimationController animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        return interaction ? interactionController : nil
     }
 }
