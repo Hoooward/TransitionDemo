@@ -16,8 +16,12 @@
 		89B1D2381CCA137C00511C25 /* NavigationTransition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B1D2361CCA137C00511C25 /* NavigationTransition.storyboard */; };
 		89B1D23A1CCA15B300511C25 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1D2391CCA15B300511C25 /* FirstViewController.swift */; };
 		89B1D23C1CCA15D400511C25 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1D23B1CCA15D400511C25 /* SecondViewController.swift */; };
-		89B1D23F1CCA165600511C25 /* HWDTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1D23E1CCA165600511C25 /* HWDTransitionController.swift */; };
+		89B1D23F1CCA165600511C25 /* SlideAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1D23E1CCA165600511C25 /* SlideAnimationController.swift */; };
 		89B1D2411CCA442100511C25 /* HWDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1D2401CCA442100511C25 /* HWDNavigationController.swift */; };
+		89B1D2431CCA667500511C25 /* OverlayAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1D2421CCA667500511C25 /* OverlayAnimationController.swift */; };
+		89B1D2451CCB430E00511C25 /* PresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1D2441CCB430E00511C25 /* PresentedViewController.swift */; };
+		89B1D2471CCB43D000511C25 /* HWDModalTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1D2461CCB43D000511C25 /* HWDModalTransitionDelegate.swift */; };
+		89B1D2491CCB449200511C25 /* OverlayPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1D2481CCB449200511C25 /* OverlayPresentationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +36,12 @@
 		89B1D2371CCA137C00511C25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NavigationTransition.storyboard; sourceTree = "<group>"; };
 		89B1D2391CCA15B300511C25 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		89B1D23B1CCA15D400511C25 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		89B1D23E1CCA165600511C25 /* HWDTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWDTransitionController.swift; sourceTree = "<group>"; };
+		89B1D23E1CCA165600511C25 /* SlideAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideAnimationController.swift; sourceTree = "<group>"; };
 		89B1D2401CCA442100511C25 /* HWDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWDNavigationController.swift; sourceTree = "<group>"; };
+		89B1D2421CCA667500511C25 /* OverlayAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayAnimationController.swift; sourceTree = "<group>"; };
+		89B1D2441CCB430E00511C25 /* PresentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedViewController.swift; sourceTree = "<group>"; };
+		89B1D2461CCB43D000511C25 /* HWDModalTransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWDModalTransitionDelegate.swift; sourceTree = "<group>"; };
+		89B1D2481CCB449200511C25 /* OverlayPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayPresentationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +74,11 @@
 		893B57A31CC9FFAA00E7FFED /* TransitionDemo */ = {
 			isa = PBXGroup;
 			children = (
-				893B57B61CCA02C600E7FFED /* RootTableViewController.swift */,
 				893B57B81CCA03AE00E7FFED /* SegueHelper.swift */,
 				893B57A41CC9FFAA00E7FFED /* AppDelegate.swift */,
-				89B1D23E1CCA165600511C25 /* HWDTransitionController.swift */,
+				893B57B61CCA02C600E7FFED /* RootTableViewController.swift */,
+				897BD2F11CCB7DAC00E9A001 /* ModalTransition */,
 				893B57A81CC9FFAA00E7FFED /* Main.storyboard */,
-				89B1D2401CCA442100511C25 /* HWDNavigationController.swift */,
 				89B1D23D1CCA15DD00511C25 /* NavigationTransition */,
 				893B57AB1CC9FFAA00E7FFED /* Assets.xcassets */,
 				893B57AD1CC9FFAA00E7FFED /* LaunchScreen.storyboard */,
@@ -80,9 +87,22 @@
 			path = TransitionDemo;
 			sourceTree = "<group>";
 		};
+		897BD2F11CCB7DAC00E9A001 /* ModalTransition */ = {
+			isa = PBXGroup;
+			children = (
+				89B1D2421CCA667500511C25 /* OverlayAnimationController.swift */,
+				89B1D2461CCB43D000511C25 /* HWDModalTransitionDelegate.swift */,
+				89B1D2441CCB430E00511C25 /* PresentedViewController.swift */,
+				89B1D2481CCB449200511C25 /* OverlayPresentationController.swift */,
+			);
+			name = ModalTransition;
+			sourceTree = "<group>";
+		};
 		89B1D23D1CCA15DD00511C25 /* NavigationTransition */ = {
 			isa = PBXGroup;
 			children = (
+				89B1D23E1CCA165600511C25 /* SlideAnimationController.swift */,
+				89B1D2401CCA442100511C25 /* HWDNavigationController.swift */,
 				89B1D2361CCA137C00511C25 /* NavigationTransition.storyboard */,
 				89B1D2391CCA15B300511C25 /* FirstViewController.swift */,
 				89B1D23B1CCA15D400511C25 /* SecondViewController.swift */,
@@ -162,10 +182,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89B1D23F1CCA165600511C25 /* HWDTransitionController.swift in Sources */,
+				89B1D23F1CCA165600511C25 /* SlideAnimationController.swift in Sources */,
 				893B57B91CCA03AE00E7FFED /* SegueHelper.swift in Sources */,
+				89B1D2431CCA667500511C25 /* OverlayAnimationController.swift in Sources */,
 				893B57A51CC9FFAA00E7FFED /* AppDelegate.swift in Sources */,
+				89B1D2491CCB449200511C25 /* OverlayPresentationController.swift in Sources */,
+				89B1D2471CCB43D000511C25 /* HWDModalTransitionDelegate.swift in Sources */,
 				893B57B71CCA02C600E7FFED /* RootTableViewController.swift in Sources */,
+				89B1D2451CCB430E00511C25 /* PresentedViewController.swift in Sources */,
 				89B1D2411CCA442100511C25 /* HWDNavigationController.swift in Sources */,
 				89B1D23C1CCA15D400511C25 /* SecondViewController.swift in Sources */,
 				89B1D23A1CCA15B300511C25 /* FirstViewController.swift in Sources */,
@@ -290,6 +314,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TransitionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.self.Hooowardsjskajskdjkjkj.TransitionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -301,6 +326,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TransitionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.self.Hooowardsjskajskdjkjkj.TransitionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
